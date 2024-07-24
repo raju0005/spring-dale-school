@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const contactReducerSlice = createSlice({
     name: 'contact',
     initialState: null, 

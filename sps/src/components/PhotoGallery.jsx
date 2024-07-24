@@ -30,21 +30,38 @@ const photos = [
 
 const PhotoGallery = () => {
   return (  
-    <div className="reveal w-full flex flex-col justify-around items-center gap-5 bg-white text-green-600 p-5">
-      <h2 className="text-3xl font-bold text-center mb-5 uppercase ">Photo Gallery</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section 
+      className="reveal w-full flex flex-col justify-around items-center gap-5 bg-white text-green-600 p-5" 
+      aria-labelledby="photo-gallery-title"
+    >
+      <h2 
+        id="photo-gallery-title"
+        className="text-3xl font-bold text-center mb-5 uppercase"
+      >
+        Photo Gallery
+      </h2>
+      <div 
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" 
+        role="list" 
+        aria-label="Photo Gallery"
+      >
         {photos.map((photo, index) => (
-          <div key={index} className="reveal">
+          <div 
+            key={index} 
+            className="reveal" 
+            role="listitem"
+          >
             <img
               src={photo.src}
               alt={photo.alt}
-              className="object-cover w-full h-64 rounded-xl animate__animated animated__fadeIn"
+              className="object-cover w-full h-64 rounded-xl animate__animated animate__fadeIn"
+              role="img"
             />
             <p className="mt-2 text-center">{photo.caption}</p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

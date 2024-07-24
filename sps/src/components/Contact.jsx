@@ -2,15 +2,25 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="reveal mb-7 w-full bg-green-600 rounded-lg flex flex-col md:flex-row justify-center items-center gap-2 shadow-md p-5">
+    <div 
+      className="reveal mb-7 w-full bg-green-600 rounded-lg flex flex-col md:flex-row justify-center items-center gap-2 shadow-md p-5"
+      role="contentinfo"
+      aria-labelledby="contact-header"
+    >
       <div className="w-[50%] flex flex-col justify-around items-center p-10">
-        <h1 className="m-10 text-white font-bold uppercase text-center">Springdale Public School</h1>
-        <p className="flex flex-col justify-around items-center text-center gap-2 text-white ">
-          <span>123 Education Lane</span>
-          <span>Cityville,</span>
-          <span>ABC State -2XXXXX</span>
-          <span>+1 (123) 456-7890</span>
-          <span>info@springdale.edu</span>
+        <h1 
+          id="contact-header"
+          className="m-10 text-white font-bold uppercase text-center"
+          aria-label="Contact Information"
+        >
+          Springdale Public School
+        </h1>
+        <p className="flex flex-col justify-around items-center text-center gap-2 text-white">
+          <span aria-label="Address">123 Education Lane</span>
+          <span aria-label="City">Cityville,</span>
+          <span aria-label="State">ABC State -2XXXXX</span>
+          <span aria-label="Phone Number">+1 (123) 456-7890</span>
+          <span aria-label="Email">info@springdale.edu</span>
         </p>
       </div>
       <iframe
@@ -21,6 +31,7 @@ const Contact = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        aria-label="Map showing the location of Springdale Public School"
       ></iframe>
     </div>
   );
