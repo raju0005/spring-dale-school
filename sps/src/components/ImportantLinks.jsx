@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 const ImportantLinks = () => {
   return (
     <nav role="navigation" aria-label="Important links">
-      <ul className="md:flex md:flex-row flex-col justify-between items-center gap-5 cursor-pointer p-3 text-green-600 text-[14px] uppercase font-bold text-center">
+      <ul className="md:flex md:flex-row flex-col justify-around items-center gap-10 md:gap-5 cursor-pointer p-3 text-green-600 text-[14px] uppercase font-bold text-center">
         <li>
           <RouterLink
             to="/aboutus"
