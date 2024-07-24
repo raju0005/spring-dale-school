@@ -7,12 +7,12 @@ const Students = () => {
     <div className="flex flex-col justify-center items-center mt-5 gap-10">
       <div className="reveal relative w-screen p-2 rounded-xl">
         <img
-          className="object-fill w-full h-[300px]"
+          className="object-cover w-full h-[300px]"
           src="https://placehold.co/10000x800/grey/grey?text="
           alt=""
         />
         <div className="absolute top-0 left-0 h-full w-full flex justify-center items-center">
-          <h1 className=" text-green-800 font-bold uppercase text-[50px]">
+          <h1 className=" text-white font-bold uppercase text-[50px]">
             Students
           </h1>
         </div>
