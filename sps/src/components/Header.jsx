@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="relative z-10">
       <nav className="flex justify-between items-center p-1 gap-5 shadow-md w-screen md:h-[15vh] h-[10vh] bg-white" role="navigation" aria-label="Main navigation">
-        <div className="flex items-center justify-around gap-2 md:h-[70%] h-[50%]">
+        <div className="flex items-center justify-around gap-2 md:h-[70%] h-[50%] ml-2">
           <img
             className="object-contain h-[90%]"
             src="https://placehold.co/600x400?text=Logo"
